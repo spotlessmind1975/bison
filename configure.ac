@@ -34,17 +34,17 @@ AC_CONFIG_MACRO_DIR([m4])
 # When we move to Automake 1.16, simplify examples/c/reccalc/local.mk.
 # Our CI build the packages on Bionic, which has only Automake 1.15.
 #
-# We want gnits strictness only when rolling a stable release.  For
-# release candidates, we use version strings like 2.4.3_rc1, but gnits
-# doesn't like that, so we let the underscore disable gnits.  Between
+# We want gnu strictness only when rolling a stable release.  For
+# release candidates, we use version strings like 2.4.3_rc1, but gnu
+# doesn't like that, so we let the underscore disable gnu.  Between
 # releases, we want to be able run make dist without being required to
 # add a bogus NEWS entry.  In that case, the version string
-# automatically contains a dash, which we also let disable gnits.
+# automatically contains a dash, which we also let disable gnu.
 AM_INIT_AUTOMAKE([1.15 dist-lzip dist-xz nostdinc
                  color-tests parallel-tests
                  silent-rules]
                  m4_bmatch(m4_defn([AC_PACKAGE_VERSION]), [[-_]],
-                           [gnu], [gnits]))
+                           [gnu], [gnu]))
 AM_SILENT_RULES([yes])
 AC_CONFIG_HEADERS([lib/config.h:lib/config.in.h])
 
