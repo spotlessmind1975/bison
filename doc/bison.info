@@ -1,7 +1,7 @@
 This is bison.info, produced by makeinfo version 6.8 from bison.texi.
 
-This manual (12 September 2021) is for GNU Bison (version 3.8.2), the
-GNU parser generator.
+This manual (23 May 2023) is for GNU Bison (version UNKNOWN), the GNU
+parser generator.
 
    Copyright © 1988–1993, 1995, 1998–2015, 2018–2021 Free Software
 Foundation, Inc.
@@ -28,8 +28,8 @@ File: bison.info,  Node: Top,  Next: Introduction,  Up: (dir)
 Bison
 *****
 
-This manual (12 September 2021) is for GNU Bison (version 3.8.2), the
-GNU parser generator.
+This manual (23 May 2023) is for GNU Bison (version UNKNOWN), the GNU
+parser generator.
 
    Copyright © 1988–1993, 1995, 1998–2015, 2018–2021 Free Software
 Foundation, Inc.
@@ -434,7 +434,7 @@ Bison has grown more robust and evolved many other new features thanks
 to the hard work of a long list of volunteers.  For details, see the
 ‘THANKS’ and ‘ChangeLog’ files included in the Bison distribution.
 
-   This edition corresponds to version 3.8.2 of Bison.
+   This edition corresponds to version UNKNOWN of Bison.
 
 
 File: bison.info,  Node: Conditions,  Next: Copying,  Prev: Introduction,  Up: Top
@@ -11882,7 +11882,7 @@ C++ skeleton changed several times, it is safer to require the version
 you designed the grammar for.
 
      %skeleton "lalr1.cc" // -*- C++ -*-
-     %require "3.8.2"
+     %require "UNKNOWN"
      %header
 
 Because our scanner returns only genuine tokens and never simple
@@ -16184,267 +16184,267 @@ Index of Terms
 
 
 Tag Table:
-Node: Top1066
-Node: Introduction18219
-Node: Conditions19794
-Node: Copying21717
-Node: Concepts59459
-Node: Language and Grammar60655
-Node: Grammar in Bison66769
-Node: Semantic Values68685
-Node: Semantic Actions70821
-Node: GLR Parsers71998
-Node: Simple GLR Parsers74773
-Node: Merging GLR Parses81253
-Ref: Merging GLR Parses-Footnote-186591
-Node: GLR Semantic Actions86732
-Node: Semantic Predicates89333
-Node: Locations91786
-Node: Bison Parser93264
-Node: Stages96464
-Node: Grammar Layout97689
-Node: Examples99051
-Node: RPN Calc100544
-Ref: RPN Calc-Footnote-1101596
-Node: Rpcalc Declarations101674
-Node: Rpcalc Rules103730
-Node: Rpcalc Input105629
-Node: Rpcalc Line107208
-Node: Rpcalc Exp108360
-Node: Rpcalc Lexer110373
-Node: Rpcalc Main113070
-Node: Rpcalc Error113481
-Node: Rpcalc Generate114509
-Node: Rpcalc Compile115757
-Node: Infix Calc116721
-Ref: Infix Calc-Footnote-1119567
-Node: Simple Error Recovery119720
-Node: Location Tracking Calc121658
-Node: Ltcalc Declarations122358
-Node: Ltcalc Rules123453
-Node: Ltcalc Lexer125295
-Node: Multi-function Calc127636
-Ref: Multi-function Calc-Footnote-1129413
-Node: Mfcalc Declarations129491
-Node: Mfcalc Rules131515
-Node: Mfcalc Symbol Table132793
-Node: Mfcalc Lexer136255
-Node: Mfcalc Main138828
-Node: Exercises139704
-Node: Grammar File140231
-Node: Grammar Outline141081
-Node: Prologue141939
-Node: Prologue Alternatives143740
-Ref: Prologue Alternatives-Footnote-1153440
-Node: Bison Declarations153545
-Node: Grammar Rules153955
-Node: Epilogue154411
-Node: Symbols155462
-Node: Rules162497
-Node: Rules Syntax162812
-Node: Empty Rules164877
-Node: Recursion165964
-Node: Semantics167622
-Node: Value Type168928
-Node: Multiple Types170216
-Node: Type Generation171666
-Node: Union Decl173596
-Node: Structured Value Type174989
-Node: Actions176015
-Node: Action Types179899
-Node: Midrule Actions181252
-Node: Using Midrule Actions181906
-Node: Typed Midrule Actions185445
-Node: Midrule Action Translation186995
-Node: Midrule Conflicts189488
-Node: Tracking Locations192097
-Node: Location Type192829
-Node: Actions and Locations194352
-Node: Printing Locations196734
-Node: Location Default Action197496
-Node: Named References201033
-Node: Declarations203630
-Node: Require Decl205319
-Node: Token Decl205833
-Node: Precedence Decl208750
-Node: Type Decl211026
-Node: Symbol Decls211977
-Node: Initial Action Decl212932
-Node: Destructor Decl213747
-Node: Printer Decl219393
-Node: Expect Decl221662
-Node: Start Decl225663
-Node: Pure Decl226057
-Node: Push Decl227805
-Node: Decl Summary232244
-Ref: %header234925
-Node: %define Summary243258
-Ref: api-filename-type245169
-Ref: api-token-prefix256117
-Node: %code Summary268123
-Node: Multiple Parsers272379
-Node: Interface276239
-Node: Parser Function277348
-Node: Push Parser Interface279841
-Ref: yypstate_new280226
-Ref: yypstate_delete280667
-Ref: yypush_parse281081
-Ref: yypull_parse282093
-Node: Lexical283096
-Node: Calling Convention284671
-Node: Special Tokens286200
-Node: Tokens from Literals287639
-Node: Token Values288720
-Node: Token Locations289888
-Node: Pure Calling290820
-Node: Error Reporting293417
-Node: Error Reporting Function293940
-Node: Syntax Error Reporting Function297312
-Node: Action Features301923
-Node: Internationalization306263
-Node: Enabling I18n307123
-Node: Token I18n309241
-Node: Algorithm310644
-Node: Lookahead313066
-Node: Shift/Reduce315280
-Node: Precedence319347
-Node: Why Precedence320119
-Node: Using Precedence322034
-Node: Precedence Only323534
-Node: Precedence Examples325336
-Node: How Precedence325860
-Node: Non Operators327005
-Node: Contextual Precedence328578
-Node: Parser States330324
-Node: Reduce/Reduce331579
-Node: Mysterious Conflicts336388
-Node: Tuning LR340015
-Node: LR Table Construction341221
-Node: Default Reductions346839
-Node: LAC351626
-Node: Unreachable States357132
-Node: Generalized LR Parsing359139
-Node: Memory Management363524
-Node: Error Recovery365908
-Node: Context Dependency371188
-Node: Semantic Tokens372045
-Node: Lexical Tie-ins375121
-Node: Tie-in Recovery376577
-Node: Debugging378709
-Node: Counterexamples380174
-Node: Understanding386180
-Ref: state-8392904
-Node: Graphviz398455
-Node: Xml402776
-Node: Tracing404514
-Node: Enabling Traces404891
-Node: Mfcalc Traces409019
-Node: Invocation414230
-Node: Bison Options416336
-Node: Operation Modes417183
-Node: Diagnostics422900
-Ref: Wconflicts-sr423208
-Ref: Wconflicts-rr423232
-Ref: Wcounterexamples423620
-Ref: Wdangling-alias423933
-Ref: Wdeprecated425263
-Ref: Wempty-rule425387
-Ref: Wmidrule-values425599
-Ref: Wprecedence426310
-Ref: Wyacc427444
-Ref: Wother427506
-Ref: Wall427810
-Ref: Wnone427930
-Ref: Werror428206
-Node: Tuning the Parser430013
-Ref: option-yacc433427
-Ref: Tuning the Parser-Footnote-1435280
-Node: Output Files435346
-Node: Option Cross Key438623
-Node: Yacc Library440761
-Node: Other Languages441834
-Node: C++ Parsers442459
-Node: A Simple C++ Example443188
-Ref: A Simple C++ Example-Footnote-1447342
-Node: C++ Bison Interface447425
-Node: C++ Parser Interface449015
-Node: C++ Semantic Values453602
-Node: C++ Unions454152
-Node: C++ Variants454945
-Node: C++ Location Values458718
-Node: C++ position459657
-Node: C++ location462026
-Node: Exposing the Location Classes464216
-Node: User Defined Location Type466115
-Node: C++ Parser Context467694
-Node: C++ Scanner Interface471661
-Node: Split Symbols472229
-Node: Complete Symbols473964
-Node: A Complete C++ Example478719
-Node: Calc++ --- C++ Calculator479662
-Node: Calc++ Parsing Driver480183
-Node: Calc++ Parser483150
-Node: Calc++ Scanner487273
-Node: Calc++ Top Level491228
-Node: D Parsers491927
-Node: D Bison Interface492631
-Node: D Semantic Values493744
-Node: D Location Values494577
-Node: D Parser Interface495448
-Node: D Parser Context Interface500364
-Node: D Scanner Interface501807
-Node: D Action Features504747
-Node: D Push Parser Interface505516
-Node: D Complete Symbols506992
-Node: Java Parsers507708
-Node: Java Bison Interface508524
-Node: Java Semantic Values510715
-Node: Java Location Values512412
-Node: Java Parser Interface514010
-Node: Java Parser Context Interface519267
-Node: Java Scanner Interface521352
-Node: Java Action Features525424
-Node: Java Push Parser Interface528175
-Node: Java Differences531170
-Ref: Java Differences-Footnote-1533833
-Node: Java Declarations Summary533987
-Node: History539020
-Node: Yacc539476
-Ref: Yacc-Footnote-1540972
-Ref: Yacc-Footnote-2541203
-Node: yacchack541273
-Node: Byacc541700
-Node: Bison542519
-Node: Other Ungulates544537
-Node: Versioning545127
-Node: FAQ548550
-Node: Memory Exhausted549577
-Node: How Can I Reset the Parser549879
-Node: Strings are Destroyed552473
-Node: Implementing Gotos/Loops554178
-Node: Multiple start-symbols555471
-Node: Secure? Conform?557051
-Node: Enabling Relocatability557505
-Node: I can't build Bison560429
-Node: Where can I find help?561701
-Node: Bug Reports562496
-Node: More Languages563975
-Node: Beta Testing564312
-Node: Mailing Lists565188
-Node: Table of Symbols565400
-Node: Glossary582432
-Node: GNU Free Documentation License592794
-Node: Bibliography618148
-Ref: Corbett 1984618288
-Ref: Denny 2008618638
-Ref: Denny 2010 May618964
-Ref: Denny 2010 November619239
-Ref: DeRemer 1982619577
-Ref: Isradisaikul 2015619849
-Ref: Johnson 1978620178
-Ref: Knuth 1965620447
-Ref: Scott 2000620683
-Node: Index of Terms621000
+Node: Top1062
+Node: Introduction18211
+Node: Conditions19788
+Node: Copying21711
+Node: Concepts59453
+Node: Language and Grammar60649
+Node: Grammar in Bison66763
+Node: Semantic Values68679
+Node: Semantic Actions70815
+Node: GLR Parsers71992
+Node: Simple GLR Parsers74767
+Node: Merging GLR Parses81247
+Ref: Merging GLR Parses-Footnote-186585
+Node: GLR Semantic Actions86726
+Node: Semantic Predicates89327
+Node: Locations91780
+Node: Bison Parser93258
+Node: Stages96458
+Node: Grammar Layout97683
+Node: Examples99045
+Node: RPN Calc100538
+Ref: RPN Calc-Footnote-1101590
+Node: Rpcalc Declarations101668
+Node: Rpcalc Rules103724
+Node: Rpcalc Input105623
+Node: Rpcalc Line107202
+Node: Rpcalc Exp108354
+Node: Rpcalc Lexer110367
+Node: Rpcalc Main113064
+Node: Rpcalc Error113475
+Node: Rpcalc Generate114503
+Node: Rpcalc Compile115751
+Node: Infix Calc116715
+Ref: Infix Calc-Footnote-1119561
+Node: Simple Error Recovery119714
+Node: Location Tracking Calc121652
+Node: Ltcalc Declarations122352
+Node: Ltcalc Rules123447
+Node: Ltcalc Lexer125289
+Node: Multi-function Calc127630
+Ref: Multi-function Calc-Footnote-1129407
+Node: Mfcalc Declarations129485
+Node: Mfcalc Rules131509
+Node: Mfcalc Symbol Table132787
+Node: Mfcalc Lexer136249
+Node: Mfcalc Main138822
+Node: Exercises139698
+Node: Grammar File140225
+Node: Grammar Outline141075
+Node: Prologue141933
+Node: Prologue Alternatives143734
+Ref: Prologue Alternatives-Footnote-1153434
+Node: Bison Declarations153539
+Node: Grammar Rules153949
+Node: Epilogue154405
+Node: Symbols155456
+Node: Rules162491
+Node: Rules Syntax162806
+Node: Empty Rules164871
+Node: Recursion165958
+Node: Semantics167616
+Node: Value Type168922
+Node: Multiple Types170210
+Node: Type Generation171660
+Node: Union Decl173590
+Node: Structured Value Type174983
+Node: Actions176009
+Node: Action Types179893
+Node: Midrule Actions181246
+Node: Using Midrule Actions181900
+Node: Typed Midrule Actions185439
+Node: Midrule Action Translation186989
+Node: Midrule Conflicts189482
+Node: Tracking Locations192091
+Node: Location Type192823
+Node: Actions and Locations194346
+Node: Printing Locations196728
+Node: Location Default Action197490
+Node: Named References201027
+Node: Declarations203624
+Node: Require Decl205313
+Node: Token Decl205827
+Node: Precedence Decl208744
+Node: Type Decl211020
+Node: Symbol Decls211971
+Node: Initial Action Decl212926
+Node: Destructor Decl213741
+Node: Printer Decl219387
+Node: Expect Decl221656
+Node: Start Decl225657
+Node: Pure Decl226051
+Node: Push Decl227799
+Node: Decl Summary232238
+Ref: %header234919
+Node: %define Summary243252
+Ref: api-filename-type245163
+Ref: api-token-prefix256111
+Node: %code Summary268117
+Node: Multiple Parsers272373
+Node: Interface276233
+Node: Parser Function277342
+Node: Push Parser Interface279835
+Ref: yypstate_new280220
+Ref: yypstate_delete280661
+Ref: yypush_parse281075
+Ref: yypull_parse282087
+Node: Lexical283090
+Node: Calling Convention284665
+Node: Special Tokens286194
+Node: Tokens from Literals287633
+Node: Token Values288714
+Node: Token Locations289882
+Node: Pure Calling290814
+Node: Error Reporting293411
+Node: Error Reporting Function293934
+Node: Syntax Error Reporting Function297306
+Node: Action Features301917
+Node: Internationalization306257
+Node: Enabling I18n307117
+Node: Token I18n309235
+Node: Algorithm310638
+Node: Lookahead313060
+Node: Shift/Reduce315274
+Node: Precedence319341
+Node: Why Precedence320113
+Node: Using Precedence322028
+Node: Precedence Only323528
+Node: Precedence Examples325330
+Node: How Precedence325854
+Node: Non Operators326999
+Node: Contextual Precedence328572
+Node: Parser States330318
+Node: Reduce/Reduce331573
+Node: Mysterious Conflicts336382
+Node: Tuning LR340009
+Node: LR Table Construction341215
+Node: Default Reductions346833
+Node: LAC351620
+Node: Unreachable States357126
+Node: Generalized LR Parsing359133
+Node: Memory Management363518
+Node: Error Recovery365902
+Node: Context Dependency371182
+Node: Semantic Tokens372039
+Node: Lexical Tie-ins375115
+Node: Tie-in Recovery376571
+Node: Debugging378703
+Node: Counterexamples380168
+Node: Understanding386174
+Ref: state-8392898
+Node: Graphviz398449
+Node: Xml402770
+Node: Tracing404508
+Node: Enabling Traces404885
+Node: Mfcalc Traces409013
+Node: Invocation414224
+Node: Bison Options416330
+Node: Operation Modes417177
+Node: Diagnostics422894
+Ref: Wconflicts-sr423202
+Ref: Wconflicts-rr423226
+Ref: Wcounterexamples423614
+Ref: Wdangling-alias423927
+Ref: Wdeprecated425257
+Ref: Wempty-rule425381
+Ref: Wmidrule-values425593
+Ref: Wprecedence426304
+Ref: Wyacc427438
+Ref: Wother427500
+Ref: Wall427804
+Ref: Wnone427924
+Ref: Werror428200
+Node: Tuning the Parser430007
+Ref: option-yacc433421
+Ref: Tuning the Parser-Footnote-1435274
+Node: Output Files435340
+Node: Option Cross Key438617
+Node: Yacc Library440755
+Node: Other Languages441828
+Node: C++ Parsers442453
+Node: A Simple C++ Example443182
+Ref: A Simple C++ Example-Footnote-1447336
+Node: C++ Bison Interface447419
+Node: C++ Parser Interface449009
+Node: C++ Semantic Values453596
+Node: C++ Unions454146
+Node: C++ Variants454939
+Node: C++ Location Values458712
+Node: C++ position459651
+Node: C++ location462020
+Node: Exposing the Location Classes464210
+Node: User Defined Location Type466109
+Node: C++ Parser Context467688
+Node: C++ Scanner Interface471655
+Node: Split Symbols472223
+Node: Complete Symbols473958
+Node: A Complete C++ Example478713
+Node: Calc++ --- C++ Calculator479656
+Node: Calc++ Parsing Driver480177
+Node: Calc++ Parser483144
+Node: Calc++ Scanner487269
+Node: Calc++ Top Level491224
+Node: D Parsers491923
+Node: D Bison Interface492627
+Node: D Semantic Values493740
+Node: D Location Values494573
+Node: D Parser Interface495444
+Node: D Parser Context Interface500360
+Node: D Scanner Interface501803
+Node: D Action Features504743
+Node: D Push Parser Interface505512
+Node: D Complete Symbols506988
+Node: Java Parsers507704
+Node: Java Bison Interface508520
+Node: Java Semantic Values510711
+Node: Java Location Values512408
+Node: Java Parser Interface514006
+Node: Java Parser Context Interface519263
+Node: Java Scanner Interface521348
+Node: Java Action Features525420
+Node: Java Push Parser Interface528171
+Node: Java Differences531166
+Ref: Java Differences-Footnote-1533829
+Node: Java Declarations Summary533983
+Node: History539016
+Node: Yacc539472
+Ref: Yacc-Footnote-1540968
+Ref: Yacc-Footnote-2541199
+Node: yacchack541269
+Node: Byacc541696
+Node: Bison542515
+Node: Other Ungulates544533
+Node: Versioning545123
+Node: FAQ548546
+Node: Memory Exhausted549573
+Node: How Can I Reset the Parser549875
+Node: Strings are Destroyed552469
+Node: Implementing Gotos/Loops554174
+Node: Multiple start-symbols555467
+Node: Secure? Conform?557047
+Node: Enabling Relocatability557501
+Node: I can't build Bison560425
+Node: Where can I find help?561697
+Node: Bug Reports562492
+Node: More Languages563971
+Node: Beta Testing564308
+Node: Mailing Lists565184
+Node: Table of Symbols565396
+Node: Glossary582428
+Node: GNU Free Documentation License592790
+Node: Bibliography618144
+Ref: Corbett 1984618284
+Ref: Denny 2008618634
+Ref: Denny 2010 May618960
+Ref: Denny 2010 November619235
+Ref: DeRemer 1982619573
+Ref: Isradisaikul 2015619845
+Ref: Johnson 1978620174
+Ref: Knuth 1965620443
+Ref: Scott 2000620679
+Node: Index of Terms620996
 
 End Tag Table
 

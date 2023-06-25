@@ -18,7 +18,7 @@
    along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 %skeleton "lalr1.cc" // -*- C++ -*-
-%require "3.8.2"
+%require "UNKNOWN"
 %header
 
 %define api.token.raw
@@ -27,10 +27,12 @@
 %define api.value.type variant
 %define parse.assert
 
+ /**/
 %code requires {
   # include <string>
   class driver;
 }
+ /**/
 
 // The parsing context.
 %param { driver& drv }
@@ -41,9 +43,11 @@
 %define parse.error detailed
 %define parse.lac full
 
+ /**/
 %code {
 # include "driver.hh"
 }
+ /**/
 
 %define api.token.prefix {TOK_}
 %token
